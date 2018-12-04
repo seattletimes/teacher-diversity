@@ -5,9 +5,9 @@ require("component-responsive-frame/child");
 require("./tabs");
 require("./map");
 
-var $ = require("./lib/qsa");
+// var $ = require("./lib/qsa");
 
-//scroll content
+// scroll content
 
 // var debounce = require("./lib/debounce");
 // var Camera = require("savage-camera");
@@ -30,18 +30,18 @@ var $ = require("./lib/qsa");
 //       if (layerID == current) return;
 //       var layer = document.querySelector("#" + layerID);
 //       if (!layer) return;
-      // if (layerID != "Existing") {
-      //   savage(intro).addClass("zoomed");
-      // } else {
-      //   savage(intro).removeClass("zoomed");
-      // }
-    //   var active = document.querySelector(".activated");
-    //   if (active) savage(active).removeClass("activated");
-    //   savage(layer).addClass("activated");
-    //   current = layerID;
-    //   camera.zoomTo(layer);
-    //   return;
-    // }
+//       if (layerID != "Existing") {
+//         savage(intro).addClass("zoomed");
+//       } else {
+//         savage(intro).removeClass("zoomed");
+//       }
+//       var active = document.querySelector(".activated");
+//       if (active) savage(active).removeClass("activated");
+//       savage(layer).addClass("activated");
+//       current = layerID;
+//       camera.zoomTo(layer);
+//       return;
+//     }
 //   }
 // }
 

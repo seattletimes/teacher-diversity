@@ -20,7 +20,7 @@
 
           <div class="backdrop">
             <picture>
-              <source media="(max-width:1200px)"
+              <source media="(max-width:1400px)"
                 srcset="./assets/teacher-diversity-BG.jpg">
                 <img src="./assets/teacher-diversity-BG.jpg">
             </picture>
@@ -44,14 +44,34 @@
         </div>
 
         <div class="content constrained">
-        <%= t.include("partials/_ad.html", { type: "square" }) %>
-        
+          <%= t.include("partials/_ad.html", { type: "square" }) %>
+        </div>
+          
         <div class="caption centered">Continue reading below</div>
-        
+
+        <div class="content constrained">
+          <%= t.include("_map.html") %>
+        </div>
+          
         <div class="caption centered">Continue reading below</div>
-      </div>
+
+        <div class="content constrained">
+          <%= t.include("_tabs.html") %>
+        </div>
 
     </main>
+
+    <footer class="credits constrained">
+      <ul>
+        <li> <b>Reporter:</b> Daniel Beekman, <a href="mailto:dbeekman@seattletimes.com">dbeekman@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/DBeekman">@DBeekman</a></li>
+        <li> <b>Video:</b> Lauren Frohne and Ramon Dompor</li>
+        <li> <b>Maps and Graphics:</b> Emily M. Eng and Mark Nowlin</li>
+        <li> <b>Photos:</b> Dean Rutz, Steve Ringman and Ellen M. Banner</li>
+        <li> <b>Design and Development:</b> Alec Glassford and Thomas Wilburn</li>
+        <li> <b>Project editors:</b> Beth Kaiman and Laura Gordon</li>
+        <li>Staff reporter Justin Mayo and news researcher Miyoko Wolf contributed to this article.</li>
+      </ul>
+    </footer>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>

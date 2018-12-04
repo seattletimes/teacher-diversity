@@ -14,7 +14,7 @@ ich.addTemplate("popup", templateFile);
 var overallLegend = require("./_overallLegend.html");
 ich.addTemplate("overallLegend", overallLegend);
 
-var dataAll = require("./allDistrict.geo.json");
+var dataAll = require("./geoJson/allDistrict.geo.json");
 var dataAsian = require("./asian.geo.json");
 var dataBlack = require("./black.geo.json");
 var dataLatino = require("./latino.geo.json");
