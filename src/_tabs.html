@@ -1,0 +1,105 @@
+<aside class="tabset" aria-live="polite" aria-controls="tab-controls">
+
+  <div class="tabs" id="tab-controls">
+    <label>Discover South Park</label>
+    <a href="#youth" class="selected"><img src="assets/photos/edwards.jpg" alt="Chrisshel Edwards holds a certificate">Youth</a>
+    <a href="#trees"><img src="assets/photos/titlecard-trees.jpg" alt="Teens with saplings and tools for planting">Environment</a>
+    <a href="#crime"><img src="assets/photos/titlecard-crime.jpg" alt="Lieutenant Adrian Diaz speaking">Crime</a>
+    <a href="#infrastructure"><img src="assets/photos/infrastructure.jpg" alt="Street in South Park">Infrastructure</a>
+  </div>
+
+  <div class="tab-content show" id="youth">
+    <div class="text-container">
+      <h2>Where community centers serve Seattle youth</h2>
+      <p>
+        South Park is the youngest of Seattle's 53 neighborhoods, by percentage of residents under 18, and its community center has a larger teen budget than most.
+      </p>
+    </div>
+    <div class="hbox row-reverse">
+      <div data-flex="2-3">
+        <div class="image-container">
+          <img src="assets/photos/edwards.jpg" alt="Chrisshel Edwards holds a certificate" aria-describedby="edwards-caption">
+          <div class="caption" id="edwards-caption">Chrisshel Edwards shows off the certificate she earned for completing an environmental training session with the Youth Corps. (Dean Rutz / The Seattle Times)</div>
+          <img src="./assets/graphics/community-center-budget-WEB.jpg" alt="Two bar charts showing Seattle neighborhoods with the highest youth populations by percentage and Seattle commnity centers with the largest teen budgets">
+        </div>
+      </div>
+      <div data-flex="1-3">
+        <div class="map-container">
+          <leaflet-map class="community-centers">
+            <map-options>{ "zoomSnap": 0.25 }</map-options>
+            <tile-layer layer="cartoPositron"></tile-layer>
+          </leaflet-map>
+        </div>
+        <aside class="legend text-container">
+        </aside>
+      </div>
+    </div>
+    <div class="source">Sources: city of Seattle, Seattle Parks and Recreation, U.S. Census<span class="align-right">Alec Glassford & Emily M. Eng / The Seattle Times</span></div>
+  </div>
+
+  <div class="tab-content" id="trees">
+    <div class="text-container">
+      <h2>Planting trees where Seattle is less green</h2>
+      <p>
+        South Park’s air is less healthy than the air in leafier neighborhoods, so local teenagers are encouraging their neighbors to plant more trees.
+    </div>
+    <div class="hbox row-reverse">
+      <div data-flex="2-3">
+        <div class="image-container">
+          <%= t.include("_video.html", { id: "5788939930001" }) %>
+          <div class="caption">A Duwamish Valley Youth Corps participant explains the program's tree-planting effort. (Lauren Frohne & Ramon Dompor / The Seattle Times)</div>
+          <img src="./assets/graphics/tree-canopy-WEB.jpg" alt="Bar chart showing the tree canopy coverage of various areas in Seattle">
+        </div>
+      </div>
+      <div class="image-container" data-flex="1-3" aria-live="polite" aria-controls="canopy-toggle">
+        <img src="./assets/graphics/tree-canopy-southPark-WEB.jpg" class="canopy-map" alt="Map showing tree canopy coverage of South Park and surrounding areas">
+        <img src="./assets/graphics/tree-canopy-seattle-WEB.jpg" class="canopy-map hidden" alt="Map showing tree canopy coverage of Seattle">
+        <button id="canopy-toggle">Show<br>Seattle</button>
+      </div>
+    </div>
+    <div class="source">Sources: city of Seattle, Trees for Seattle<span class="align-right">Emily M. Eng / The Seattle Times</span></div>
+  </div>
+
+  <div class="tab-content" id="crime">
+    <div class="text-container">
+      <h2>Clusters of gunfire in South Park</h2>
+      <p>
+        In recent years, South Park has seen increases in confirmed reports of shots fired and in shootings, with incidents concentrated in certain parts of the neighborhood.
+    </div>
+    <div class="hbox row-reverse">
+      <div class="" data-flex="2-3">
+        <div class="image-container">
+          <%= t.include("_video.html", { id: "5782719735001"}) %>
+          <div class="caption">Lt. Adrian Diaz of the Seattle Police Department and Carmen Martinez of the Duwamish Valley Youth Corps talk with neighbors and youth in South Park about gangs, violence and graffiti. (Lauren Frohne & Ramon Dompor / The Seattle Times)</div>
+          <img src="./assets/graphics/southpark-shootings-shots-fired-WEB.jpg" alt="Column chart showing 'shots fired' and shooting incidents in South Park by year from 2012 through the first few months of 2018">
+        </div>
+      </div>
+      <div class="image-container" data-flex="1-3">
+        <img src="./assets/graphics/southpark-shootings-Clustermap-W.jpg" alt="Map showing locations of various 'shots fired' and shooting incidents in South Park">
+      </div>
+    </div>
+    <div class="source">Source: Seattle Police Department<span class="align-right">Mark Nowlin & Emily M. Eng / The Seattle Times</span></div>
+  </div>
+
+  <div class="tab-content" id="infrastructure">
+    <div class="text-container">
+      <h2>Creating safer streets</h2>
+      <p>
+        Seattle is spending nearly $1 million on projects meant to make South Park safer for pedestrians and more friendly in general.
+    </div>
+    <div class="hbox row-reverse">
+      <div class="" data-flex="2-3">
+        <div class="image-container">
+          <img src="assets/photos/infrastructure.jpg" alt="Street in South Park" aria-describedby="infrastructure-caption">
+          <div class="caption" id="infrastructure-caption">There’s no supermarket, no bank and no post office in South Park, but mom-and-pop stores and snug cottages give the area a small-town feel. (Steve Ringman / The Seattle Times)</div>
+          <img src="./assets/graphics/improvements-key-W.jpg" alt="Two lists of eight approved infrastructure projects in South Park and four other potential projects">
+        </div>
+      </div>
+      <div class="image-container" data-flex="1-3">
+        <img src="./assets/graphics/southpark-improvements-W.jpg" alt="Map of infrastructure projects (approved and potential) in South Park">
+      </div>
+    </div>
+    <div class="source">Source: city of Seattle<span class="align-right">Emily M. Eng & Mark Nowlin / The Seattle Times</span></div>
+  </div>
+
+</aside>
