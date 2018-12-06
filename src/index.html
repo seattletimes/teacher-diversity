@@ -24,6 +24,7 @@
               srcset="./assets/teacher-diversity-FG.png">
               <img src="./assets/teacher-diversity-FG.png">
             </picture>
+            <span class="caption right">Jennifer Luxton / The Seattle Times</div>
           </div>
       </section>
 
@@ -35,13 +36,21 @@
     </header>
 
     <main class="article">
+      <div class="constrained">
+        <img src="assets/mug-KG.jpg" alt="Portrait of Katie Gillespie">
+        <img src="assets/mug-KG.jpg" alt="Portrait of Katie Gillespie">
+      </div>
         <div class="byline constrained">
-          By <a class="name" href="https://www.seattletimes.com/author/dahlia-bazzaz/">Dahlia Bazzaz</a>
-          <div class="staff">Seattle Times staff reporter</div>
+          By <a class="name" href="https://www.seattletimes.com/author/dahlia-bazzaz/">Dahlia Bazzaz</a>, <i>Seattle Times staff reporter</i> | <a class="name" href="https://www.columbian.com/author/katiegillespie/">Katie Gillespie</a> <i>The Columbian staff reporter</i>
           <div class="date">Published December 7, 2018</div>
         </div>
 
-        <div class="content constrained">
+        <section class="constrained">
+          <aside class="sidebar">
+          <p>Talk about join project here</p><hr><a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong>Read more:</strong></a> other story links here</aside>
+        </section>
+
+        <div class="content constrained floating">
           <%= t.include("partials/_ad.html", { type: "square" }) %>
         </div>
           
@@ -61,7 +70,7 @@
 
     <footer class="credits constrained">
       <ul>
-        <li> <b>Reporter:</b> Dahlia Bazzaz, <a href="mailto:dbazzaz@seattletimes.com">dbazzaz@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/dahliabazzaz">@dahliabazzaz</a></li>
+        <li> <b>Reporters:</b> Dahlia Bazzaz, <a href="mailto:dbazzaz@seattletimes.com">dbazzaz@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/dahliabazzaz">@dahliabazzaz</a><br>Katie Gillespie, <a href="mailto:katie.gillespie@columbian.com">katie.gillespie@columbian.com</a>; on Twitter: <a href="https://twitter.com/newsladykatie">@newsladykatie</a></li>
         <li> <b>Graphics, design and development:</b> Emily M. Eng</li>
         <li> <b>Illustration:</b> Jennifer Luxton</li>
         <li> <b>Project editors:</b> Joy Resmovits</li>

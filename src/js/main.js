@@ -2,8 +2,9 @@
 // var track = require("./lib/tracking");
 
 require("component-responsive-frame/child");
-require("./tabs");
 require("./map");
+require("./tabs");
+
 
 // var $ = require("./lib/qsa");
 

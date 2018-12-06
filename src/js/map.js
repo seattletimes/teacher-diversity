@@ -14,17 +14,17 @@ ich.addTemplate("popup", templateFile);
 var overallLegend = require("./_overallLegend.html");
 ich.addTemplate("overallLegend", overallLegend);
 
-var dataAll = require("./geoJson/allDistrict.geo.json");
-var dataAsian = require("./asian.geo.json");
-var dataBlack = require("./black.geo.json");
-var dataLatino = require("./latino.geo.json");
-var dataMulti = require("./multi.geo.json");
-var dataNative = require("./native.geo.json");
-var dataPi = require("./pi.geo.json");
-var dataWhite = require("./white.geo.json");
-var data = dataAll;
+var dataAll = require("./allDistrict.geo.json");
+// var dataAsian = require("./data/asian.geo.json");
+// var dataBlack = require("./data/black.geo.json");
+// var dataLatino = require("./data/latino.geo.json");
+// var dataMulti = require("./data/multi.geo.json");
+// var dataNative = require("./data/native.geo.json");
+// var dataPi = require("./data/pi.geo.json");
+// var dataWhite = require("./data/white.geo.json");
+// var data = dataAll;
 
-// var raceOn = tab;
+// var raceOn = button;
 
 var commafy = s => (s * 1).toLocaleString().replace(/\.0+$/, "");
 
@@ -122,11 +122,11 @@ var style = function(feature) {
 // var select = document.querySelector('click');
 // var para = document.querySelector('p');
 
-Array.prototype.slice.call(document.querySelectorAll('.tab')).forEach(function(tab) {
-  tab.addEventListener("click", function() {
+Array.prototype.slice.call(document.querySelectorAll('.button')).forEach(function(button) {
+  button.addEventListener("click", function() {
     if (document.querySelector(".selected")) document.querySelector(".selected").classList.remove("selected");
-    tab.classList.add("selected");
-    var race = tab.innerHTML;
+    button.classList.add("selected");
+    var race = button.innerHTML;
 
     if (race === 'ALL STUDENTS OF COLOR') {
       data = dataAll;

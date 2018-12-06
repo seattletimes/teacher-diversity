@@ -13,33 +13,16 @@
     background-size: 920px;
 
     @media @tablet {
-      background-position: 130px;
-      background-size: 560px;
+      background-position-y: -100%;
+      background-size: 100%;
+      min-height: 450px; 
     }
 
     @media @mobile {
-      background-position: 60px;
-      background-size: 350px;
+      background-position-y: 80%;
+      background-size: 100%;
+      min-height: 450px; 
     }
-
-  // .backdrop {
-  //   display: block;
-  //   position: fixed;
-  //   top: 0;
-  //   width: 1200px;
-  //   z-index: -1;
-  //   margin:0 auto;
-
-  //   @media @tablet {
-  //     width: 66%;
-  //     padding-top: 150px;
-  //   }
-
-  //   @media @mobile {
-  //     width: 100%;
-  //     padding-top: 200px;
-  //   }
-  // }
 
   .layer {
     float: right;
@@ -48,6 +31,14 @@
     padding: 16px;
     font-family: @df-sans;
     font-size: 16px;
+
+    @media @tablet {
+
+    }
+
+    @media @mobile {
+
+    }
 
     h2 {
       margin: 0;
