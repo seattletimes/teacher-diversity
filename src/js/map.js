@@ -14,17 +14,15 @@ ich.addTemplate("popup", templateFile);
 var overallLegend = require("./_overallLegend.html");
 ich.addTemplate("overallLegend", overallLegend);
 
-var dataAll = require("./allDistrict.geo.json");
-// var dataAsian = require("./data/asian.geo.json");
-// var dataBlack = require("./data/black.geo.json");
-// var dataLatino = require("./data/latino.geo.json");
-// var dataMulti = require("./data/multi.geo.json");
-// var dataNative = require("./data/native.geo.json");
-// var dataPi = require("./data/pi.geo.json");
-// var dataWhite = require("./data/white.geo.json");
-// var data = dataAll;
-
-// var raceOn = button;
+var dataAll = require("../assets/allDistrict.geo.json");
+var dataAsian = require("../assets/asian.geo.json");
+var dataBlack = require("../assets/black.geo.json");
+var dataLatino = require("../assets/latino.geo.json");
+var dataMulti = require("../assets/multi.geo.json");
+var dataNative = require("../assets/native.geo.json");
+var dataPi = require("../assets/pi.geo.json");
+var dataWhite = require("../assets/white.geo.json");
+var data = dataAll;
 
 var commafy = s => (s * 1).toLocaleString().replace(/\.0+$/, "");
 
