@@ -1,9 +1,9 @@
 // require("./lib/ads");
 // var track = require("./lib/tracking");
 
-require("component-responsive-frame/child");
+// require("component-responsive-frame/child");
 require("./map");
-require("./tabs");
+// require("./tabs");
 
 
 // var $ = require("./lib/qsa");

@@ -8,12 +8,12 @@
     "url": "https://github.com/seattletimes/teacher-diversity.git"
   },
   "dependencies": {
-    "async": "^2.0.0-rc.1",
+    "async": "^1.5.2",
     "aws-sdk": "^2.2.45",
     "babel-preset-env": "^1.6.0",
-    "babelify": "^7.3.0",
+    "babelify": "^6.4.0",
     "browser-pack-flat": "^3.0.5",
-    "browserify": "^13.0.0",
+    "browserify": "^9.0.8",
     "chalk": "^1.0.0",
     "commonmark": "^0.24.0",
     "component-leaflet-map": "0.0.17",
