@@ -14,7 +14,7 @@ ich.addTemplate("popup", templateFile);
 var overallLegend = require("./_overallLegend.html");
 ich.addTemplate("overallLegend", overallLegend);
 
-var dataAll = require("./allDistrict.geo.json");
+var dataAllDistrict = require("./allDistrict.geo.json");
 var dataAsian = require("./asian.geo.json");
 var dataBlack = require("./black.geo.json");
 var dataLatino = require("./latino.geo.json");
@@ -22,7 +22,7 @@ var dataMulti = require("./multi.geo.json");
 var dataNative = require("./native.geo.json");
 var dataPi = require("./pi.geo.json");
 var dataWhite = require("./white.geo.json");
-var data = dataAll;
+var data = dataAllDistrict;
 
 var commafy = s => (s * 1).toLocaleString().replace(/\.0+$/, "");
 
@@ -127,7 +127,7 @@ Array.prototype.slice.call(document.querySelectorAll('.button')).forEach(functio
     var race = button.innerHTML;
 
     if (race === 'ALL STUDENTS OF COLOR') {
-      data = dataAll;
+      data = dataAllDistrict;
     } else if (race === 'Asian') {
       data = dataAsian;
     } else if (race === 'Black') {
