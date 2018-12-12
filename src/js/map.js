@@ -24,16 +24,35 @@ var dataPi = require("./pi.geo.json");
 var dataWhite = require("./white.geo.json");
 var data = dataAllDistrict;
 
-var commafy = s => (s * 1).toLocaleString().replace(/\.0+$/, "");
+function commafy(s) {
+  return (s * 1).toLocaleString().replace(/\.0+$/, "");
+}
 
-data.features.forEach(function(f) {
-	["persoc", "pertoc"].forEach(function(prop) {
-		f.properties[prop] = (f.properties[prop] * 100).toFixed(1);
-	});
-	["totalstudents", "soc", "totalteachers", "toc"].forEach(function(prop) {
-		f.properties[prop] = commafy ((f.properties[prop]));
-	});
-  ["ratio"].forEach(function(prop) {f.properties[prop] =(f.properties[prop] * 1).toFixed(2);
+var allData = [dataAllDistrict, dataAsian, dataBlack, dataLatino, dataMulti, dataNative, dataPi, dataWhite];
+var dataLabel = [
+  'All students of color',
+  'Asian students',
+  'Black students',
+  'Hispanic/Latino students',
+  'Multiracial students',
+  'Native American/Alaska Native students',
+  'Pacific Islander/Native Hawaiian students',
+  'White students'
+];
+
+allData.forEach(function(rawData, index) {
+  rawData.features.forEach(function(f) {
+    f.properties.persoc = (f.properties.persoc * 100).toFixed(1);
+    f.properties.pertoc = (f.properties.pertoc * 100).toFixed(1);
+
+    f.properties.totalstudents = commafy(f.properties.totalstudents);
+    f.properties.soc = commafy(f.properties.soc);
+    f.properties.totalteachers = commafy(f.properties.totalteachers);
+    f.properties.toc = commafy(f.properties.toc);
+
+    f.properties.ratio = (f.properties.ratio * 1).toFixed(2);
+
+    f.properties.label = dataLabel[index];
   });
 });
 
@@ -80,7 +99,6 @@ var getColor = function(d) {
     if (typeof value == "string") {
       value = Number(value.replace(/,/, ""));
     }
-    console.log(value)
     if (typeof value != "undefined") {
 
      return value == "-0.2" ? '#a3a3a3' :
@@ -124,7 +142,7 @@ Array.prototype.slice.call(document.querySelectorAll('.button')).forEach(functio
   button.addEventListener("click", function() {
     if (document.querySelector(".selected")) document.querySelector(".selected").classList.remove("selected");
     button.classList.add("selected");
-    var race = button.innerHTML;
+    var race = button.innerText;
 
     if (race === 'ALL STUDENTS OF COLOR') {
       data = dataAllDistrict;
@@ -132,28 +150,17 @@ Array.prototype.slice.call(document.querySelectorAll('.button')).forEach(functio
       data = dataAsian;
     } else if (race === 'Black') {
       data = dataBlack;
-    } else if (race === 'Latino') {
+    } else if (race === 'Hispanic/Latino') {
       data = dataLatino;
     } else if (race === 'Multiracial') {
       data = dataMulti;
-    } else if (race === 'Native') {
+    } else if (race === 'Native American/Alaska Native') {
       data = dataNative;
-    } else if (race === 'Pacific Islander') {
+    } else if (race === 'Pacific Islander/Native Hawaiian') {
       data = dataPi;
     } else if (race === 'White') {
       data = dataWhite;
     }
-
-    data.features.forEach(function(f) {
-      ["persoc", "pertoc"].forEach(function(prop) {
-        f.properties[prop] = (f.properties[prop] * 100).toFixed(1);
-      });
-      ["totalstudents", "soc", "totalteachers", "toc"].forEach(function(prop) {
-        f.properties[prop] = commafy ((f.properties[prop]));
-      });
-      ["ratio"].forEach(function(prop) {f.properties[prop] =(f.properties[prop] * 1).toFixed(2);
-      });
-    });
 
     map.removeLayer(geojson);
     geojson = L.geoJson(data, {
