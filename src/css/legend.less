@@ -1,5 +1,5 @@
 asideB.legend {
-  position: absolute;
+  position: relative;
   bottom: 10px;
   left: 10px;
   padding: 6px 8px;
@@ -9,13 +9,8 @@ asideB.legend {
   background: rgba(255,255,255,0.8);
   border-radius: 5px;
   z-index: 9999;
-
-  @media @tablet {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-  }
+  bottom: 0;
+  left: 0;
 
   h1 {
     margin: 0;
@@ -31,6 +26,7 @@ asideB.legend {
     list-style-type: none;
     overflow: auto;
     padding-bottom: 8px;
+
     li {
       line-height: 18px;
       margin-bottom: 2px;
@@ -39,10 +35,10 @@ asideB.legend {
         text-align: center;
         width: 100% / @legend-length;
       }
-        @media @mobile {
-    font-size: 9px;
-    line-height: 12px;
-  }
+      @media @mobile {
+        font-size: 11px;
+        line-height: 14px;
+      }
     }
     .block {
       width: 2em;
