@@ -1,0 +1,118 @@
+
+section1:
+
+As students in Washington classrooms have become more diverse, the teachers who stand before them have remained almost always white.
+
+It’s a chasm that has remained stubbornly wide for decades, worsened by barriers to higher education, teacher-credential tests and limited funding to diversify teacher- training programs.
+
+A joint analysis by The Seattle Times and The Columbian newspapers found that even though the number of teachers of color is growing at a faster rate than that of white teachers, there are still few of them in classrooms. The newspapers looked at the 313 school districts, charter schools and educational service districts that sent teacher and student demographic information to the state. Last school year, nearly a quarter of Washington’s school districts had no teachers of color.
+
+:end
+
+*GRAPHIC 1 (overall demographics) HERE*
+
+section2:
+
+To Washington’s students, that lack of diversity matters — researchers say it can have lasting effects on high-school completion, discipline rates and test scores for students of color.
+
+Students like 17-year-old Lindsey Luis, a senior at Fort Vancouver High School in Southwest Washington, can spend nearly the entirety of their time in school without a single teacher who looks like them or shares their background.
+
+“There’s nothing like that one person you can speak Spanish with,” said Lindsey, who is Latina. “I’ve never had someone to relate to on a personal level.”
+
+**What it would take to achieve parity**
+
+Over the last five years, Washington’s schools have seen an 18 percent increase in the number of students of color — and a 2 percent decrease of white students. The growth of teachers of color, an increase of 32 percent, also outpaced the increase of new white teachers, which was about 10 percent.
+
+Still, three out of every four teachers the state has gained over the past five years were white.
+
+For students who identified as Latino or Hispanic, the state’s second largest demographic group, the difference is particularly stark. For every 88 Hispanic/Latino students last school year, there was only one Hispanic/Latino teacher.
+
+By contrast, there is one white teacher for every 11 white students on average.
+
+:end
+
+*GRAPHIC 2 (change over time) HERE*
+
+section3:
+
+To fully represent today’s students, about 29,500 of Washington’s 64,700 teachers would have to be people of color. That’s about 22,300 more people of color than those who currently teach here. Closing those disparities would require hiring:
+
+:end
+
+*GRAPHIC 3 (parity) HERE*
+
+section4:
+
+If the number and racial makeup of students and teachers in Washington change at the same rate as they are now, it will be more than a century before the state reaches parity.
+
+To get there, a lot needs to happen, said Chris Reykdal, the State Superintendent of Public Instruction. “We have to diversify our pathways,” he said. “If it’s not an environment they can be successful in, then it’s really exacerbating the pipeline.”
+
+**Scoring teacher representation**
+
+The two newspapers developed a ratio to score districts based on how closely their teaching staffs represent the racial demographics of their students. The higher a district’s score, the more representative its teaching staff is of its students. A score of one means exact representation.
+
+Across the state, white students and teachers had the highest average index, coming in at 1.6, indicating a higher percentage of white teachers than white students. For Latino and Hispanic students, meanwhile, the average ratio was .2.
+
+The map below shows how districts fare when ranked by a ratio that divides their percentage of teachers of color by their percentage of students of color. The closer the district is to “1,” the more its teachers reflect the demographics of its students. You can also filter to see the scoring for each population group.
+ 
+The index does not factor in the raw count of teachers or students in every demographic group and district. We've included those numbers in the pop-up windows for each district to help you navigate the scoring, especially when exploring smaller districts or demographic groups on the map.
+
+:end
+
+*WEB ONLY The map below shows how districts fared under the calculation, which divides the percentage of teachers of color by the percentage of students of color.
+
+section5:
+
+**Why it matters**
+
+Luis has her first and only teacher of color — her Spanish teacher, who she said is Cuban — at Fort Vancouver High School this year. State data from last year shows about 10 percent of the 79 teachers there identified with a race other than white — while students of color made up about 62 percent of enrollment.
+
+:end
+
+section6:
+
+“There are those teachers who do try and try their hardest, but there’s never been one who wouldn’t have to try,” the 17-year-old said.
+
+The frustrations of students like Luis are backed by a growing body of research suggesting greater teacher diversity can improve outcomes for students of color.
+
+There are many theories as to why. Among them: Teachers of color may be more likely to set higher expectations for students of color, as a [paper published by the Economics of Education Review](http://releases.jhu.edu/2016/03/30/race-biases-teachers-expectations-for-students/) found.
+
+A 2017 study of more than 100,000 black students in North Carolina found that low-income boys who had at least [one black teacher](https://www.seattletimes.com/education-lab/study-for-black-boys-just-one-black-teacher-may-make-a-big-difference/) in grades 3-5 were almost 40 percent less likely to drop out of high school and had a stronger interest in attending college.
+
+Dan Goldhaber, director of UW’s Center for Education Data and Research, has studied the demographic mismatch of students and teachers in Washington, but he and his colleagues haven’t tried to research the effects on students. He suspects it would be difficult because of the pool of diverse teachers here is small.
+
+:end
+
+*GRAPHIC 4 (teacher mismatch) HERE*
+
+section7:
+
+The absence of representation in classrooms could create cyclical recruitment challenges. Gisela Ernst-Slavit, a professor of education and English-language learning at Washington State University Vancouver, said it could engender the sense that school is not a space for students of color, and ultimately discourage them from pursuing careers in education themselves.
+
+Ernst-Slavit said, “When students only see janitors and cooks in the school, but they don’t see teachers or principals who look like them, that is a problem.”
+
+**Hurdles to a diverse pipeline start early**
+
+There isn’t a single state whose teacher workforce perfectly mirrors its students. Washington falls in the middle of the pack.
+
+Despite efforts to address the problem, barriers that could hinder aspiring teachers of color begin to mount from the time they graduate from high school.
+
+Take, for example, access to higher education. The costs of college and poor academic preparation in earlier years have kept students of color from entering the state’s colleges and universities, [according to a report](https://www.wsac.wa.gov/sites/default/files/DiversityReport.FINAL.Revised.07-2013_0.pdf) from the Washington Student Achievement Council. That contributes to keeping most university-based teacher training programs predominantly white.
+
+When a student of color makes it to higher education, there is yet another obstacle.
+
+:end
+
+*GRAPHIC 5 (west-b) HERE*
+
+section8:
+
+People of color fail the WEST-B — a three-part, mandatory test required for teacher preparation program applicants — at higher rates than their white peers, [according to](https://drive.google.com/file/d/1KRanQ9klTAoYxSQfP58SK0CVLs_FifRA/view) the state’s Professional Educator Standards Board.
+
+While candidates can attempt the test multiple times — and many do so successfully — the tests can cost up to $225 to take each time, creating yet another potential barrier.
+
+Similar to concerns about the SAT, the tests may carry an “inherent cultural and linguistic bias,” especially for bilingual candidates, the standards board suggested in a recent report. And there are questions as to how well the test predicts classroom success. The board is asking the Legislature to eliminate the requirement that teacher preparation program applicants must reach a certain score for admission. The group is also asking for more funding for so-called “grow your own” programs, alternatives to the traditional certification route that often produce more diverse teachers.
+
+Can the state turn the tide? Stay tuned for stories Wednesday and Friday on how districts in Puget Sound and Southwest Washington are trying to chip away at the problem.
+
+:end

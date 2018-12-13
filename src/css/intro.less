@@ -2,27 +2,27 @@
   display: block;
   max-width: 970px;
   z-index: -1;
-  margin: 0 auto;
+  margin: 10px auto;
   background-image: url("./assets/teacher-diversity-BG-full.jpg");
   min-height: 920px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: top;
+    background-position: 50% 75%;
     background-repeat: no-repeat;
-    background-size: 920px;
+    background-size: 900px;
 
     @media @tablet {
       background-image: url("./assets/teacher-diversity-BG.jpg");
-      background-position-y: -350%;
+      background-position: 50% 100%;
       background-size: 100%;
-      min-height: 750px; 
+      min-height: 750px;
     }
 
     @media @mobile {
-      background-position-y: 50%;
+      background-position: 50%83%;
       background-size: 100%;
-      min-height: 450px; 
+      min-height: 750px; 
     }
 
   .layer {
@@ -41,5 +41,31 @@
     }
 
     @border-width: 4px;
+  }
+    .caption {
+    margin: 6px auto 0;
+    max-width: 960px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-style: italic;
+    font-family: @df-sans;
+    color: @df-middle-gray;
+    text-align: right;
+  }
+}
+
+header.headlines {
+  h1 {    
+    margin: 0;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 52px;
+    line-height: 1.1;
+
+    @media @mobile {
+      padding: 10 0px;
+      font-size: 28px;
+    }
+
   }
 }

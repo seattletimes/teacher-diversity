@@ -30,14 +30,14 @@ function commafy(s) {
 
 var allData = [dataAllDistrict, dataAsian, dataBlack, dataLatino, dataMulti, dataNative, dataPi, dataWhite];
 var dataLabel = [
-  'All students of color',
-  'Asian students',
-  'Black students',
-  'Hispanic/Latino students',
-  'Multiracial students',
-  'Native American/Alaska Native students',
-  'Pacific Islander/Native Hawaiian students',
-  'White students'
+  'of color',
+  '(Asian)',
+  '(Black)',
+  '(Hispanic/Latino)',
+  '(Multiracial)',
+  '(Native American/Alaska Native)',
+  '(Pacific Islander/Native Hawaiian)',
+  '(White)'
 ];
 
 allData.forEach(function(rawData, index) {

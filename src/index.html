@@ -14,8 +14,8 @@
     <header>
       <section class="scroll-content">
           <div class="headlines">
-              <h1>Teacher diversity</h1>
-              <h2>text text</h2>
+              <h1>Greater teacher diversity can improve outcomes for students of color. So why are Washington teachers 89% white?</h1>
+              <h2>Teacher diversity in Washington state</h2>
           </div>
 
           <div class="layer">
@@ -24,18 +24,11 @@
               srcset="./assets/teacher-diversity-FG.png">
               <img src="./assets/teacher-diversity-FG.png">
             </picture>
-            <span class="caption right">Jennifer Luxton / The Seattle Times</div>
+            <div class="caption right">Jennifer Luxton / The Seattle Times</div>
           </div>
-      </section>
-
-      <section class="text-block project-head" id="projects">
-        <div class="constrained">
-          
-        </div>
       </section>
     </header>
     
-
     <intro class="article">
         <div class="byline">
           <img src="assets/mug-DB.jpg" alt="Portrait of Dahlia Bazzaz">By <a class="name" href="https://www.seattletimes.com/author/dahlia-bazzaz/">Dahlia Bazzaz</a>, <i>Seattle Times staff reporter</i></div>
@@ -48,28 +41,94 @@
     <main class="article">
         <section class="constrained">
         <div class="date">Published December 7, 2018</div>
-          <aside class="sidebar">
-          <p>Talk about join project here</p><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong> Read more:</strong></a> other story links here</aside>
-        </section>
+        
+        <aside class="sidebar">
+          <p>A joint project by The Seattle Times and The Columbian</p><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong> Read more:</strong></a> other story links here</aside>
 
-        <div class="content constrained floating">
-          <%= t.include("partials/_ad.html", { type: "square" }) %>
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section1) %>
         </div>
-          
-        <div class="caption centered">Continue reading below</div>
+
+        <aside class="graphic">
+          <h3>Student and teacher demographics in Washington</h3>
+          <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
+  <!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
+
+          <div class="source">Note: Totals are based on reported data from districts, charter schools, and
+            educational service districts with both teacher and student demographics.<br>Source: Office of the Superintendent of Public Instruction (2017-18)</div>
+          <span class="credit">Emily M. Eng / The Seattle Times</div>
+        </aside>
+
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section2) %>
+        </div>
+
+        <h3>Teachers of color still a rarity in a diversifying state</h3>
+        <img src="assets/graphics/pop-growth-W.jpg" alt="Teachers of color still a rarity in a diversifying state" class="hidden-mobile">
+        <img src="assets/graphics/pop-growth-M.jpg" alt="Teachers of color still a rarity in a diversifying state" class="visible-mobile">
+        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+        
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section3) %>
+        </div>
+        
+        <h3>How many more teachers would it take to achieve parity?</h3>
+        <img src="assets/graphics/teachers-needed-equality-W.jpg" alt="Circle graph of how many current teachers and '" class="hidden-mobile">
+        <img src="assets/graphics/teachers-needed-equality-M.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile">
+        <div class="source"> Source: Office of the Superintendent of Public Instruction (2017-18)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section4) %>
+        </div>
+      </section>
 
         <div class="content" id="map-content">
           <%= t.include("_map.html") %>
         </div>
-          
-        <div class="caption centered">Continue reading below</div>
 
+      <section class="constrained">
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section5) %>
+        </div>
+
+        <img src="assets/graphics/Index-average-bar-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
+<!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
+        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+
+        <div class="content constrained floating">
+          <%= t.include("partials/_ad.html", { type: "square" }) %>
+        </div>
+
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section6) %>
+        </div>
+</section>
+
+        <hr>
         <div class="content">
           <%= t.include("_tabs.html") %>
         </div>
+        <hr>
+      <section class="constrained">
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section7) %>
+        </div>
+
+        <img src="assets/graphics/WestB-pass-rate-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
+<!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
+        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section8) %>
+        </div>
+      </section>
     </main>
 
     <footer class="credits constrained">
+      <div class="callout">
+        <p><b>Are you a student?</b></p><hr>We want to know how diversity among your teachers has affected your time in the classroom. <a href="https://www.seattletimes.com/education-lab/students-we-want-to-know-how-diversity-among-your-teachers-has-affected-your-schooling/"><strong>Share your story with us here</strong></a> and it could be published in The Seattle Times.</aside>
+      </div>
+      <br>
       <ul>
         <li> <b>Reporters:</b> Dahlia Bazzaz, <a href="mailto:dbazzaz@seattletimes.com">dbazzaz@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/dahliabazzaz">@dahliabazzaz</a><br>Katie Gillespie, <a href="mailto:katie.gillespie@columbian.com">katie.gillespie@columbian.com</a>; on Twitter: <a href="https://twitter.com/newsladykatie">@newsladykatie</a></li>
         <li> <b>Graphics, design and development:</b> Emily M. Eng</li>
