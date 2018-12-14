@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-
+  <%= t.include("partials/_gtm.html") %>
   <%= t.include("partials/_nav.html") %>
 
     <div class="top-ad">
@@ -21,10 +21,10 @@
     
     <intro class="article">
         <div class="byline">
-          <img src="assets/mug-DB.jpg" alt="Portrait of Dahlia Bazzaz">By <a class="name" href="https://www.seattletimes.com/author/dahlia-bazzaz/">Dahlia Bazzaz</a>, <i>Seattle Times staff reporter</i></div>
+          <img src="assets/mug-DB.jpg" alt="Portrait of Dahlia Bazzaz"><div class="reporter">By <a class="name" href="https://www.seattletimes.com/author/dahlia-bazzaz/">Dahlia Bazzaz,</a> <i>Seattle Times staff reporter</i></div></div>
         <div class="byline">
           <img src="assets/mug-KG.jpg" alt="Portrait of Katie Gillespie">
-          By <a class="name" href="https://www.columbian.com/author/katiegillespie/">Katie Gillespie,</a> <i>The Columbian staff reporter</i></div>
+          <div class="reporter">By <a class="name" href="https://www.columbian.com/author/katiegillespie/">Katie Gillespie,</a> <i>The Columbian staff reporter</i></div></div>
         </div>
       </intro>
 
@@ -144,7 +144,7 @@
         <li> <b>Engagement editor:</b> Mohammed Kloub</li>
       </ul>
     </footer>
-
+    <%= t.include("partials/_navBottom.html") %>
     <script src="app.js" async></script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
