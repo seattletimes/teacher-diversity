@@ -6,12 +6,12 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": "2018/teacher-diversity-state"
+      "path": "2018/teacher-diversity-wa"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "Teacher diversity in Washington state",
+  "description": "Greater representation can improve outcomes for students of color. So why are 89% of Washington teachers white?",
+  "url": "https://projects.seattletimes.com/2018/teacher-diversity-wa/",
   "image": "assets/social.jpg",
   "sheets": [],
   "standout": false,

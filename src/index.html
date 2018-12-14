@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <meta property="og:image" content="https://projects.seattletimes.com/2018/teacher-diversity-wa/assets/social.jpg" />
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
@@ -13,9 +14,9 @@
     </div>
     <header class="headlines">
           <h1>Teacher diversity in Washington state</h1>
+          <h2>Greater representation can improve outcomes for students of color. So why are 89% of Washington teachers white?</h2>
           <video src="./assets/video/animation.mp4" autoplay playsinline muted></video>
           <div class="caption">Jennifer Luxton / The Seattle Times</div>
-          <h2>Greater teacher diversity can improve outcomes for students of color. So why are Washington teachers 89% white?</h2>
     </header>
     
     <intro class="article">
@@ -33,7 +34,7 @@
         
         <aside class="sidebar">
           <p>A joint project by The Seattle Times and The Columbian</p><hr>
-          <a href="https://www.seattletimes.com/education-lab-about/"><img src="assets/edulab_logo.jpg" alt="Education Lab logo"></a><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<br><strong> Read more:</strong><br><li><a href="https://www.seattletimes.com/education-lab/how-do-we-solve-the-teacher-diversity-gap-in-washington-for-clark-county-the-answer-may-be-grow-your-own/">Clark County's answer to the teacher diversity gap</a><br><li><a href="https://www.seattletimes.com/education-lab/how-do-we-solve-the-teacher-diversity-gap-in-washington-for-clark-county-the-answer-may-be-grow-your-own/">Clark County's answer to the teacher diversity gap</a></aside>
+          <a href="https://www.seattletimes.com/education-lab-about/"><img src="assets/edulab_logo.jpg" alt="Education Lab logo"></a><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<br><strong> Read more:</strong><br><li><a href="https://www.seattletimes.com/education-lab/puget-sound-school-districts-are-trying-to-recruit-and-keep-more-teachers-of-color-heres-how/">Recruiting — and keeping — teachers of color around Puget Sound</a><br><li><a href="https://www.seattletimes.com/education-lab/how-do-we-solve-the-teacher-diversity-gap-in-washington-for-clark-county-the-answer-may-be-grow-your-own/">One Southwest Washington county's answer</a></aside>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section1) %>
@@ -43,7 +44,7 @@
           <h3>Student and teacher demographics in Washington</h3>
           <img src="assets/graphics/demographic-compare-W.jpg" alt="2017-18 teacher demographics compared to students">
           <div class="source">Note: Totals are based on reported data from districts, charter schools, and
-            educational service districts with both teacher and student demographics.<br>Source: Office of the Superintendent of Public Instruction (2017-18)</div>
+            educational service districts with both teacher and student demographics.<br>Source: Office of Superintendent of Public Instruction (2017-18)</div>
           <span class="credit">Emily M. Eng / The Seattle Times</div>
         </aside>
 
@@ -54,7 +55,7 @@
         <h3>Teachers of color still a rarity in a diversifying state</h3>
         <img src="assets/graphics/pop-growth-W.jpg" alt="Teachers of color still a rarity in a diversifying state" class="hidden-mobile">
         <img src="assets/graphics/pop-growth-M.jpg" alt="Teachers of color still a rarity in a diversifying state" class="visible-mobile">
-        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+        <div class="source"> Sources: Office of Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
         
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section3) %>
@@ -63,7 +64,7 @@
         <h3>How many more teachers would it take to achieve parity?</h3>
         <img src="assets/graphics/teachers-needed-equality-W.jpg" alt="Circle graph of how many current teachers and needed teachers to match student demographics in 2017-18'" class="hidden-mobile">
         <img src="assets/graphics/teachers-needed-equality-M.jpg" alt="Circle graph of how many current teachers and needed teachers to match student demographics in 2017-18" class="visible-mobile">
-        <div class="source"> Source: Office of the Superintendent of Public Instruction (2017-18)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+        <div class="source"> Source: Office of Superintendent of Public Instruction (2017-18)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section4) %>
@@ -92,14 +93,14 @@
         </div>
 
         <aside class="sidebar">
-          <img src="assets/photo_teacher.jpg" alt="Adam Aguilera helps fourth-grader Kaler Mathews with a question">Adam Aguilera helps fourth-grader Kaler Mathews with a question about their math exercise during class at Pioneer Elementary School on Nov. 5, 2018, in Vancouver. Aguilera, who is Latino, said his own identity informs his teaching and helps him relate to his students of color on a meaningful level. (Alisha Jucevic/The Columbian)</aside>
+          <img src="assets/photo_teacher.jpg" alt="Adam Aguilera helps fourth-grader Kaler Mathews with a question">Adam Aguilera, who is Latino, said his identity informs his teaching and helps him relate to his students of color at Pioneer Elementary School in Vancouver. (Alisha Jucevic/The Columbian)</aside>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section6b) %>
         </div>
 
       </section>
-
+        <div class="caption centered">Click on the name of a district to see its stats</div>
         <hr>
         <div class="content">
           <%= t.include("_tabs.html") %>
@@ -130,9 +131,9 @@
     </main>
 
     <footer class="credits constrained">
-<!--       <div class="callout">
-        <p><b>Are you a student?</b></p><hr>We want to know how diversity among your teachers has affected your time in the classroom. <a href="https://www.seattletimes.com/education-lab/students-we-want-to-know-how-diversity-among-your-teachers-has-affected-your-schooling/"><strong>Share your story with us here</strong></a> and it could be published in The Seattle Times.</aside>
-      </div> -->
+      <div class="callout">
+        <p><b>Curious about our analysis?</b></p><hr><a href="https://www.seattletimes.com/education-lab/how-we-measured-the-demographic-divide-between-students-and-teachers-in-washington-state/">How we measured the demographic divide between students and teachers in Washington state</a></aside>
+      </div>
       <br>
       <ul>
         <li> <b>Reporters:</b> Dahlia Bazzaz, <a href="mailto:dbazzaz@seattletimes.com">dbazzaz@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/dahliabazzaz">@dahliabazzaz</a><br>Katie Gillespie, <a href="mailto:katie.gillespie@columbian.com">katie.gillespie@columbian.com</a>; on Twitter: <a href="https://twitter.com/newsladykatie">@newsladykatie</a></li>
@@ -140,6 +141,7 @@
         <li> <b>Illustration:</b> Jennifer Luxton</li>
         <li> <b>Project editors:</b> Joy Resmovits and Laura Gordon</li>
         <li> <b>Copy editor:</b> Jane MacDonald</li>
+        <li> <b>Engagement editor:</b> Mohammed Kloub</li>
       </ul>
     </footer>
 
