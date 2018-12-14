@@ -11,21 +11,11 @@
     <div class="top-ad">
       <%= t.include("partials/_ad.html", { type: "banner" }) %>
     </div>
-    <header>
-      <div class="headlines">
-              <h1>Teacher diversity in Washington state</h1>
-          </div>
-        <section class="scroll-content">
-          <div class="layer">
-            <picture>
-              <source media="(max-width:2000px)"
-              srcset="./assets/teacher-diversity-FG.png">
-              <img src="./assets/teacher-diversity-FG.png">
-            </picture>
-            <div class="caption right">Jennifer Luxton / The Seattle Times</div>
-          </div>
+    <header class="headlines">
+          <h1>Teacher diversity in Washington state</h1>
+          <video src="./assets/video/animation.mp4" autoplay playsinline muted></video>
+          <div class="caption">Jennifer Luxton / The Seattle Times</div>
           <h2>Greater teacher diversity can improve outcomes for students of color. So why are Washington teachers 89% white?</h2>
-      </section>
     </header>
     
     <intro class="article">
@@ -43,7 +33,7 @@
         
         <aside class="sidebar">
           <p>A joint project by The Seattle Times and The Columbian</p><hr>
-          <a href="https://www.seattletimes.com/education-lab-about/"><img src="assets/edulab_logo.jpg" alt="Education Lab logo"></a><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong> Read more:</strong></a> other story links here</aside>
+          <a href="https://www.seattletimes.com/education-lab-about/"><img src="assets/edulab_logo.jpg" alt="Education Lab logo"></a><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<br><strong> Read more:</strong><br><li><a href="https://www.seattletimes.com/education-lab/how-do-we-solve-the-teacher-diversity-gap-in-washington-for-clark-county-the-answer-may-be-grow-your-own/">Clark County's answer to the teacher diversity gap</a><br><li><a href="https://www.seattletimes.com/education-lab/how-do-we-solve-the-teacher-diversity-gap-in-washington-for-clark-county-the-answer-may-be-grow-your-own/">Clark County's answer to the teacher diversity gap</a></aside>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section1) %>
@@ -101,9 +91,8 @@
           <%= t.renderMarkdown(archieml.teacher.section6a) %>
         </div>
 
-        <div class="content constrained floating">
-          <%= t.include("partials/_ad.html", { type: "square" }) %>
-        </div>
+        <aside class="sidebar">
+          <img src="assets/photo_teacher.jpg" alt="Adam Aguilera helps fourth-grader Kaler Mathews with a question">Adam Aguilera helps fourth-grader Kaler Mathews with a question about their math exercise during class at Pioneer Elementary School on Nov. 5, 2018, in Vancouver. Aguilera, who is Latino, said his own identity informs his teaching and helps him relate to his students of color on a meaningful level. (Alisha Jucevic/The Columbian)</aside>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section6b) %>
@@ -118,7 +107,15 @@
         <hr>
       <section class="constrained">
         <div class="constrained">
-          <%= t.renderMarkdown(archieml.teacher.section7) %>
+          <%= t.renderMarkdown(archieml.teacher.section7a) %>
+        </div>
+
+        <div class="content constrained floating">
+          <%= t.include("partials/_ad.html", { type: "square" }) %>
+        </div>
+
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section7b) %>
         </div>
 
         <h3>Aspiring teachers of color pass entry tests at lower rates</h3>

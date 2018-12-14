@@ -89,11 +89,15 @@ Dan Goldhaber, director of UW’s Center for Education Data and Research, has st
 
 *GRAPHIC 4 (teacher mismatch) HERE*
 
-section7:
+section7a:
 
 The absence of representation in classrooms could create cyclical recruitment challenges. Gisela Ernst-Slavit, a professor of education and English-language learning at Washington State University Vancouver, said it could engender the sense that school is not a space for students of color, and ultimately discourage them from pursuing careers in education themselves.
 
 Ernst-Slavit said, “When students only see janitors and cooks in the school, but they don’t see teachers or principals who look like them, that is a problem.”
+
+:end
+
+section7b:
 
 **Hurdles to a diverse pipeline start early**
 

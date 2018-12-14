@@ -36,7 +36,32 @@ intro.article {
   @media @mobile {
     .flex-wrap(row wrap);
   }
+}
 
+header.headlines {
+   video {
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    max-width: 1000px;
+    border: none;
+  }
+  h1, h2 {
+    margin: 20px auto 0;
+    max-width: 1000px;
+  }
+
+  .caption {
+    margin: 6px auto 0;
+    max-width: 1000px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-style: italic;
+    font-family: @df-sans;
+    color: @df-middle-gray;
+    text-align: right;
+  }
 }
 
 main.article {
