@@ -22,6 +22,11 @@
   max-width: 670px;
 }
 
+.full {
+  margin: auto;
+  max-width: 960px;
+}
+
 intro.article {
   margin-left: auto;
   margin-right: auto;
@@ -49,10 +54,19 @@ header.headlines {
     border: none;
   }
   
-  h1, h2 {
+  h1 {
     margin: 20px auto 0;
     max-width: 1000px;
+    padding-bottom: 0px;
+  }
+
+  h2 {
+    margin: 20px auto 0;
+    max-width: 700px;
     padding-bottom: 10px;
+    text-align: center;
+    font-family: @df-serif;
+    font-size: 21px;
   }
 
   .caption {
@@ -64,10 +78,10 @@ header.headlines {
     font-family: @df-sans;
     color: @df-middle-gray;
     text-align: right;
-    padding-right: 20px;
 
-    @media @mobile {
-      max-width: 300px;
+    @media @tablet {
+      max-width: 95%;
+      padding-right: 0px;
     }
   }
 }
@@ -161,6 +175,7 @@ main.article {
       margin: 0 auto;
       border-left: none;
       padding-left: 0;
+      max-width: 100%;
     }
 
     div {
@@ -179,10 +194,50 @@ main.article {
     }
   }
 
+  aside.sidebarTop {
+      display: block;
+      max-width: 400px;
+      margin-top:10px;
+      float: right;
+      padding-right: 40px;
+
+      img {
+        width: 80%;
+        padding-left: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      @media @tablet {
+        max-width: 250px;
+
+        img {
+          width: 100%;
+          padding-left: 0px;
+        }
+      }
+
+      @media @mobile {
+      margin-top: 0px;
+      float: none;
+      margin: 0 auto;
+      border-left: none;
+      padding-left: 0;
+      max-width: 100%;
+    }
+  }
+
   aside.graphic {
     border-left: 0px solid #aa290d;
     max-width: 400px;
     text-align: right;
+
+    @media @mobile {
+      max-width: 100%;
+      padding-bottom: 10px;
+    }
    
     span.credit {
       font-style: normal;
@@ -203,6 +258,6 @@ main.article {
 }
 
 .callout {
-  border: 4px solid @df-border-gray;
-  padding: 0px 10px 10px;
+  background: @df-light-gray;
+  padding: 5px 20px 15px;
 }

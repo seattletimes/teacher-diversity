@@ -19,7 +19,7 @@ Students like 17-year-old Lindsey Luis, a senior at Fort Vancouver High School i
 
 “There’s nothing like that one person you can speak Spanish with,” said Lindsey, who is Latina. “I’ve never had someone to relate to on a personal level.”
 
-**What it would take to achieve parity**
+## What it would take to achieve parity
 
 Over the last five years, Washington’s schools have seen an 18 percent increase in the number of students of color — and a 2 percent decrease of white students. The growth of teachers of color, an increase of 32 percent, also outpaced the increase of new white teachers, which was about 10 percent.
 
@@ -47,7 +47,7 @@ If the number and racial makeup of students and teachers in Washington change at
 
 To get there, a lot needs to happen, said Chris Reykdal, the State Superintendent of Public Instruction. “We have to diversify our pathways,” he said. “If it’s not an environment they can be successful in, then it’s really exacerbating the pipeline.”
 
-**Scoring teacher representation**
+## Scoring teacher representation
 
 The two newspapers developed a ratio to score districts based on how closely their teaching staffs represent the racial demographics of their students. The higher a district’s score, the more representative its teaching staff is of its students. A score of one means exact representation.
 
@@ -63,7 +63,7 @@ The index does not factor in the raw count of teachers or students in every demo
 
 section5:
 
-**Why it matters**
+## Why it matters
 
 Luis has her first and only teacher of color — her Spanish teacher, who she said is Cuban — at Fort Vancouver High School this year. State data from last year shows about 10 percent of the 79 teachers there identified with a race other than white — while students of color made up about 62 percent of enrollment.
 
@@ -99,7 +99,7 @@ Ernst-Slavit said, “When students only see janitors and cooks in the school, b
 
 section7b:
 
-**Hurdles to a diverse pipeline start early**
+## Hurdles to a diverse pipeline start early
 
 There isn’t a single state whose teacher workforce perfectly mirrors its students. Washington falls in the middle of the pack.
 

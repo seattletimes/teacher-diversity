@@ -68,7 +68,9 @@ h1 {
   line-height: 34 / 28;
   letter-spacing: -0.5px;
   font-family: @df-serif;
-  padding: 0px 20px;
+  padding: 0px 0px;
+  text-transform: uppercase;
+  text-align: center;
 
   @media @tablet {
     font-size: 34px;
@@ -86,9 +88,9 @@ h1 {
 
 h2 {
   font-family: @df-serif;
-  font-size: 32px;
+  font-size: 24px;
+  line-height: 28 / 26;
   line-height: @df-line-base;
-  padding: 0px 20px;
 
    @media @tablet {
     font-size: 28px;
@@ -120,38 +122,36 @@ h4 {
   font-size: 16px;
   margin: 24px auto;
 
-  @media @tablet {
-    padding: 0 16px;
-    padding-top: 0px;
-  }
+    @media @tablet {
+      padding: 0 16px;
+      padding-top: 0px;
+    }
 
-  @media @mobile {
-    padding: 0 16px;
-    font-size: 13px;
-  }
-}
+    @media @mobile {
+      padding: 0 16px;
+      font-size: 13px;
+    }
 
-.byline img {
+  img {
   float:left;
   margin:0 20px 0;
+
+    @media @mobile {
+      float:none;
+      margin:0 20px 0;
+    }
+  }
 }
 
 .reporter {
   text-align:left;
   padding:24px 0 0;
-}
 
-@media @mobile {
-  .byline img {
-  float:none;
-  margin:0 20px 0;
+    @media @mobile {
+      text-align:center;
+      padding:0;
+    }
 }
-
-  .reporter {
-  text-align:center;
-  padding:0;
-}
-  }
 
   .staff {
     font-style: italic;
@@ -410,3 +410,15 @@ footer.nav-bottom {
     }
   }
 }
+
+footer.credits {
+    padding: 0px 16px 48px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+  }
