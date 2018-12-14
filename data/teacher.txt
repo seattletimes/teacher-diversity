@@ -35,7 +35,7 @@ By contrast, there is one white teacher for every 11 white students on average.
 
 section3:
 
-To fully represent today’s students, about 29,500 of Washington’s 64,700 teachers would have to be people of color. That’s about 22,300 more people of color than those who currently teach here. Closing those disparities would require hiring:
+To fully represent today’s students, about 29,500 of Washington’s 64,700 teachers would have to be people of color. That’s about 22,300 more people of color than those who currently teach here.
 
 :end
 
@@ -69,9 +69,13 @@ Luis has her first and only teacher of color — her Spanish teacher, who she sa
 
 :end
 
-section6:
+section6a:
 
 “There are those teachers who do try and try their hardest, but there’s never been one who wouldn’t have to try,” the 17-year-old said.
+
+:end
+
+section6b:
 
 The frustrations of students like Luis are backed by a growing body of research suggesting greater teacher diversity can improve outcomes for students of color.
 

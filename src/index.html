@@ -12,12 +12,10 @@
       <%= t.include("partials/_ad.html", { type: "banner" }) %>
     </div>
     <header>
-      <section class="scroll-content">
-          <div class="headlines">
-              <h1>Greater teacher diversity can improve outcomes for students of color. So why are Washington teachers 89% white?</h1>
-              <h2>Teacher diversity in Washington state</h2>
+      <div class="headlines">
+              <h1>Teacher diversity in Washington state</h1>
           </div>
-
+        <section class="scroll-content">
           <div class="layer">
             <picture>
               <source media="(max-width:2000px)"
@@ -26,6 +24,7 @@
             </picture>
             <div class="caption right">Jennifer Luxton / The Seattle Times</div>
           </div>
+          <h2>Greater teacher diversity can improve outcomes for students of color. So why are Washington teachers 89% white?</h2>
       </section>
     </header>
     
@@ -43,7 +42,8 @@
         <div class="date">Published December 7, 2018</div>
         
         <aside class="sidebar">
-          <p>A joint project by The Seattle Times and The Columbian</p><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong> Read more:</strong></a> other story links here</aside>
+          <p>A joint project by The Seattle Times and The Columbian</p><hr>
+          <a href="https://www.seattletimes.com/education-lab-about/"><img src="assets/edulab_logo.jpg" alt="Education Lab logo"></a><hr>For a look at how districts are trying to address the issue, stay tuned for the next piece in this three-part series, a collaboration between The Seattle Times and The Columbian newspaper in Vancouver, Wash.<a href="https://www.seattletimes.com/pacific-nw-magazine/the-backstory-the-story-behind-an-affair-to-reconsider/"><strong> Read more:</strong></a> other story links here</aside>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section1) %>
@@ -51,9 +51,7 @@
 
         <aside class="graphic">
           <h3>Student and teacher demographics in Washington</h3>
-          <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
-  <!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
-
+          <img src="assets/graphics/demographic-compare-W.jpg" alt="2017-18 teacher demographics compared to students">
           <div class="source">Note: Totals are based on reported data from districts, charter schools, and
             educational service districts with both teacher and student demographics.<br>Source: Office of the Superintendent of Public Instruction (2017-18)</div>
           <span class="credit">Emily M. Eng / The Seattle Times</div>
@@ -73,8 +71,8 @@
         </div>
         
         <h3>How many more teachers would it take to achieve parity?</h3>
-        <img src="assets/graphics/teachers-needed-equality-W.jpg" alt="Circle graph of how many current teachers and '" class="hidden-mobile">
-        <img src="assets/graphics/teachers-needed-equality-M.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile">
+        <img src="assets/graphics/teachers-needed-equality-W.jpg" alt="Circle graph of how many current teachers and needed teachers to match student demographics in 2017-18'" class="hidden-mobile">
+        <img src="assets/graphics/teachers-needed-equality-M.jpg" alt="Circle graph of how many current teachers and needed teachers to match student demographics in 2017-18" class="visible-mobile">
         <div class="source"> Source: Office of the Superintendent of Public Instruction (2017-18)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
 
         <div class="constrained">
@@ -85,24 +83,33 @@
         <div class="content" id="map-content">
           <%= t.include("_map.html") %>
         </div>
-
+        
       <section class="constrained">
+        <aside class="sidebar">
+          <p><b>Are you a student?</b></p><hr>We want to know how diversity among your teachers has affected your time in the classroom. <a href="https://www.seattletimes.com/education-lab/students-we-want-to-know-how-diversity-among-your-teachers-has-affected-your-schooling/"><strong>Share your story with us here</strong></a> and it could be published in The Seattle Times.</aside>
+      
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section5) %>
         </div>
+        
+        <h3>Teachers mismatch acute in Washington’s big, small districts</h3>
+        <img src="assets/graphics/Index-average-bar-W.jpg" alt="Districts with fewer than 100K students have lower teacher-student diversity index averages than all school districts or districts with more than 100K students." class="hidden-mobile">
+        <img src="assets/graphics/Index-average-bar-M.jpg" alt="Districts with fewer than 100K students have lower teacher-student diversity index averages than all school districts or districts with more than 100K students." class="visible-mobile">
+        <div class="source"> Source: The Seattle Times/The Columbian analysis<br><span class="credit">Emily M. Eng / The Seattle Times</div>
 
-        <img src="assets/graphics/Index-average-bar-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
-<!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
-        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+        <div class="constrained">
+          <%= t.renderMarkdown(archieml.teacher.section6a) %>
+        </div>
 
         <div class="content constrained floating">
           <%= t.include("partials/_ad.html", { type: "square" }) %>
         </div>
 
         <div class="constrained">
-          <%= t.renderMarkdown(archieml.teacher.section6) %>
+          <%= t.renderMarkdown(archieml.teacher.section6b) %>
         </div>
-</section>
+
+      </section>
 
         <hr>
         <div class="content">
@@ -114,9 +121,10 @@
           <%= t.renderMarkdown(archieml.teacher.section7) %>
         </div>
 
-        <img src="assets/graphics/WestB-pass-rate-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
-<!--         <img src="assets/graphics/demographic-compare-W.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile"> -->
-        <div class="source"> Sources: Office of the Superintendent of Public Instruction, American Community Survey (2012, 2017)<br><span class="credit">Emily M. Eng / The Seattle Times</div>
+        <h3>Aspiring teachers of color pass entry tests at lower rates</h3>
+        <img src="assets/graphics/WestB-pass-rate-W.jpg" alt="Aspiring white teachers passed at higher rates than any aspiring teachers of color" class="hidden-mobile">
+        <img src="assets/graphics/WestB-pass-rate-M.jpg" alt="Aspiring white teachers passed at higher rates than any aspiring teachers of color" class="visible-mobile">
+        <div class="source"> Source: Washington Professional Educator Standards Board<br><span class="credit">Emily M. Eng / The Seattle Times</div>
 
         <div class="constrained">
           <%= t.renderMarkdown(archieml.teacher.section8) %>
@@ -125,15 +133,16 @@
     </main>
 
     <footer class="credits constrained">
-      <div class="callout">
+<!--       <div class="callout">
         <p><b>Are you a student?</b></p><hr>We want to know how diversity among your teachers has affected your time in the classroom. <a href="https://www.seattletimes.com/education-lab/students-we-want-to-know-how-diversity-among-your-teachers-has-affected-your-schooling/"><strong>Share your story with us here</strong></a> and it could be published in The Seattle Times.</aside>
-      </div>
+      </div> -->
       <br>
       <ul>
         <li> <b>Reporters:</b> Dahlia Bazzaz, <a href="mailto:dbazzaz@seattletimes.com">dbazzaz@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/dahliabazzaz">@dahliabazzaz</a><br>Katie Gillespie, <a href="mailto:katie.gillespie@columbian.com">katie.gillespie@columbian.com</a>; on Twitter: <a href="https://twitter.com/newsladykatie">@newsladykatie</a></li>
         <li> <b>Graphics, design and development:</b> Emily M. Eng</li>
         <li> <b>Illustration:</b> Jennifer Luxton</li>
         <li> <b>Project editors:</b> Joy Resmovits and Laura Gordon</li>
+        <li> <b>Copy editor:</b> Jane MacDonald</li>
       </ul>
     </footer>
 

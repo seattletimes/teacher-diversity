@@ -4,11 +4,17 @@
 @import "tabs";
 
 .visible-mobile {
-  display: block !important;
+  display: none !important;
 }
 
-.hidden-mobile {
-  display: none;
+@media @mobile {
+  .visible-mobile {
+    display: inline !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
 }
 
 .constrained {

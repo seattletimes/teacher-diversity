@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2018/teacher-diversity-state"
     }
   },
   "title": "",
@@ -15,6 +15,6 @@
   "image": "assets/social.jpg",
   "sheets": [],
   "standout": false,
-  "embedded": true,
+  "embedded": false,
   "production": false
 }

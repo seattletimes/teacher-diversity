@@ -13,6 +13,7 @@
 
     @media @mobile {
       .flex-wrap(wrap);
+      text-align: left;
     }
 
     label {
@@ -25,6 +26,8 @@
 
       @media @mobile {
         .flex(0 0 100%);
+        text-align: center;
+        padding-bottom: 10px;
       }
     }
 
@@ -150,6 +153,9 @@
       margin: 0 auto;
       &.hidden { display: none; }
       // &:nth-child(3) { margin-top: 16px; }
+      @media @mobile {
+        max-height: 800px;
+      }
     }
   }
 
